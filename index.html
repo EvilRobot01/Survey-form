@@ -18,17 +18,79 @@
     </div>
     <form action=""  id="survey-form">
         <div>
-             <label for="name" id="name-label"></label>
-            <input type="text" id="name">
-           <label for="email" id="email-label"></label>
-            <input type="email" id="email">
-            <label for="email" id="number-label"></label>
-            <input type="number" id="number">
-            dropdown  id="dropdown"
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            
+            <div class="labels">
+                <label id="name-label" for="name"> Name: </label>
+            </div>
+            <div>
+                <input autofocus type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
         </div>
-        <button id="submit"></button>
+        <div>
+            <div class="labels">
+                <label id="email-label" for="email"> Email: </label>
+            </div>
+            <div>
+                <input autofocus type="text" name="email" id="email" placeholder="Enter your email">
+            </div>
+        </div>
+        <div>
+            <div class="labels">
+                <label id="number-label" for="number"> Age: </label>
+            </div>
+            <div>
+                <input autofocus type="text" name="age" id="number" placeholder="Enter your age">
+                </div>
+        </div>
+        <div>
+            <div class="labels">
+                <label for="robotClass">What is your robot's class?</label>
+            </div>
+            <div>
+                <select id="dropdown" name="robotClass" class="dropdown">
+                <option disabled value>Select an option</option>
+                <option  value="gardener">Gardener</option>
+                <option value="mrHandy">Mr Handy</option>
+                <option value="garbageDisposal">Garbage Disposal</option>
+                <option value="carWash">Car Washer</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+            
+        <div>
+            <div class="labels">
+                <label for="useTime"> How long the robot is being used weekly?</label>
+            </div>
+            <div>
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Less than 14 hours<input name="radio-buttons" value="1"  type="radio" class="useTime" ></label></li>
+                    <li class="radio"><label>More than 14 hours<input name="radio-buttons" value="2"  type="radio" class="useTime" ></label></li>
+                    <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="useTime" ></label></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="labels">
+                <label for="useTime"> What upgrades do you wish to buy in the future</label>
+            </div>
+            <ul id="futureUpgrades" style="list-style: none;">
+                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="futureUpgrades">Speed node</label></li>
+                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="futureUpgrades">Self cleansing</li>
+                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="futureUpgrades">Longer battery time</label></li>
+                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="futureUpgrades">Solar recharging</label></li>
+                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="futureUpgrades">Pay multiuser</label></li>
+                <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="futureUpgrades">Medkit</label></li>
+            </ul>
+        </div>
+        <div>
+            <div class="labels">
+                <label for="comments">Do you want to comment more?</label>
+            </div>
+            <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="You are not a robot, are you?"></textarea>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
     </form>
   </body>
 </html>
