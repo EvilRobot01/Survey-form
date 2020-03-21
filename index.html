@@ -5,9 +5,6 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
     <title>RobotTel.co</title>
@@ -50,6 +47,7 @@
 
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
+                                <label class="label">Type</label>
                                 <select name="robot_class">
                                     <option disabled="disabled" selected="selected">Choose a class</option>
                                     <option  value="gardener">Gardener</option>
@@ -84,18 +82,36 @@
                                 </div>
                             </div>
                         </div>
-
                         <div>
                             <div class="labels">
-                                <label for="useTime"> What upgrades do you wish to buy in the future?</label>
+                                <label for="useTime" class="label"> What upgrades do you wish to buy in the future?</label>
                             </div>
                             <ul id="futureUpgrades" style="list-style: none;">
-                                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="futureUpgrades">Speed node</label></li>
-                                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="futureUpgrades">Self cleansing</li>
-                                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="futureUpgrades">Longer battery time</label></li>
-                                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="futureUpgrades">Solar recharging</label></li>
-                                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="futureUpgrades">Pay multiuser</label></li>
-                                <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="futureUpgrades">Medkit</label></li>
+                                <li class="checkbox"><label class="container label">Speed node
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label></li>
+                                <li class="checkbox"><label class="container label">Self cleansing
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label></li>
+                                <li class="checkbox"><label class="container label">Longer battery time
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label></li>
+                                <li class="checkbox"><label class="container label">Solar recharging
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label></li>
+                                <li class="checkbox"><label class="container label">Pay multiuser
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label></li>
+                                <li class="checkbox"><label class="container label">Medkit
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label></li>
+
                             </ul>
                         </div>
 
